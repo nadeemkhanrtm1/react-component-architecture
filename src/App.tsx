@@ -18,20 +18,20 @@ const App: React.FC = (props) => {
   /* -------------------------------------------------------------------------- */
   useEffect(() => {
     setDisplayName(nameSelector);
-  },[nameSelector])
+  }, [nameSelector]);
   /* -------------------------------------------------------------------------- */
   /*                       handlers like Click, Change etc                      */
   /* -------------------------------------------------------------------------- */
   const handleClick = (e: MouseEvent) => {
     setDisplayName(e.target.value);
-  }
+  };
 
   return (
-  <>
-  <input type="text" value={displayName}/>
-  <button>Submit</button>
-  </>
-  )
-}
+    <>
+      <input type="text" value={displayName} />
+      <button>Submit</button>
+    </>
+  );
+};
 
 export default App;
